@@ -62,7 +62,7 @@ header {
   margin: 0% auto;
   height: 100%;
   width: 100%;
-  background-color: dimgrey;
+  background-image: url("https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
 }
 .AmI {
   height: 50%;
@@ -102,21 +102,19 @@ p {
   margin: 0% auto;
   background-color: dimgrey;
 }
-.descriptionSkill {
-  width: 200px;
-  margin: 0% auto;
-}
+
 .contentSkill {
+  border-radius: 30px;
   padding: 0;
   margin: 0;
   background-color: gray;
   margin-block-end: 20px;
-  height: 450px;
+  height: 270px;
 }
 
 .contentSkill:hover {
-  border: 10px solid white;
   border-radius: 25px;
+  border: 10px solid white;
 }
 /**Contact**/
 .contact {
@@ -126,10 +124,9 @@ p {
 form {
   width: 50%;
   margin: 0 auto;
-  margin-top: 30px;
 }
 .fa-icons {
-  font-size: 80px;
+  font-size: 40px;
 }
 .contact-section {
   display: flex;
@@ -139,6 +136,5 @@ form {
 /**Footer**/
 footer {
   margin-top: 50px;
-  margin-bottom: 80px;
   background-color: black;
 }

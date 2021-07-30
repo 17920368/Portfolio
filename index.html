@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link
+      rel="icon"
+      type="image/vnd.microsoft.icon"
+      href="img/port.ico"
+      sizes="16x16 24x24 36x36 48x48"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -27,8 +33,8 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-
-    <title>Welcome to my Portfolio</title>
+    <script defer src="js/main.js"></script>
+    <title>My Portfolio</title>
   </head>
   <body>
     <header>
@@ -78,19 +84,17 @@
       </section>
       <section class="aboutMe" id="aboutMe">
         <article class="section__article">
-          <img src="img/Profile.png" alt="Profile" title="Profile" />
+          <img src="img/profile.jpg" alt="Profile" title="Profile" />
         </article>
         <article class="AmI">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
-            ducimus sapiente praesentium corrupti vel, rem in voluptatibus
-            molestias, autem necessitatibus et at ipsum ratione odio dolore
-            iusto placeat dolorem corporis!
+            Hello Everybody!! So I'm Víctor. At the present time. I'm Enginner
+            Informatic student at Instituto Técnologico Del Valle De
+            Oaxaca(ITVO). Actually I'm living in Oaxaca, Oaxaca.
           </p>
           <ul>
             <li>Country: Mexico.</li>
             <li>Age: 22 years old.</li>
-            <li>Informatic Engineer.</li>
             <li>I love technology.</li>
           </ul>
         </article>
@@ -100,17 +104,11 @@
           <h2 class="title">My Skill</h2>
         </article>
       </section>
-      <article class="mySkill">
+      <section class="mySkill">
         <article class="contentSkill">
           <a href="https://html.spec.whatwg.org/" target="_blank">
             <img src="img/html.png" alt="HTML 5" title="HTML 5" />
           </a>
-          <div class="descriptionSkill">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quam
-              quo.
-            </p>
-          </div>
         </article>
         <article class="contentSkill">
           <a
@@ -119,12 +117,6 @@
           >
             <img src="img/css.png" alt="CSS" title="CSS" id="imgCss" />
           </a>
-          <div class="descriptionSkill">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quam
-              quo.
-            </p>
-          </div>
         </article>
         <article class="contentSkill">
           <a href="https://www.javascript.com/" target="_blank">
@@ -135,113 +127,86 @@
               id="imgJs"
             />
           </a>
-          <div class="descriptionSkill">
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quam
-              quo.
-            </p>
-          </div>
         </article>
         <article class="contentSkill">
           <a href="https://getbootstrap.com/" target="_blank">
             <img src="img/bootstrap.png" alt="Bootstrap" title="Bootstrap" />
           </a>
-          <div class="descriptionSkill">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quam
-              quo.
-            </p>
-          </div>
         </article>
         <article class="contentSkill">
           <a href="https://laravel.com/" target="_blank">
             <img src="img/laravel.png" alt="Laravel" title="Laravel" />
           </a>
-          <div class="descriptionSkill">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quam
-              quo.
-            </p>
-          </div>
         </article>
         <article class="contentSkill">
           <a href="https://www.java.com/es/" target="_blank">
             <img src="img/java2.png" alt="Java" title="Java" />
           </a>
-          <div class="descriptionSkill">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quam
-              quo.
-            </p>
-          </div>
         </article>
         <article class="contentSkill">
           <a href="https://mariadb.org/" target="_blank">
             <img src="img/mariadb.png" alt="MariaDB" title="MariaDB" />
           </a>
-          <div class="descriptionSkill">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quam
-              quo.
-            </p>
-          </div>
         </article>
         <article class="contentSkill">
           <a href="https://www.postgresql.org/" target="_blank">
             <img src="img/postgresql.png" alt="PostgreSQL" title="PostgreSQL" />
           </a>
-          <div class="descriptionSkill">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quam
-              quo.
-            </p>
-          </div>
         </article>
-      </article>
+      </section>
       <section id="contact" class="contact">
         <article>
           <h2 class="title">Contact Me</h2>
         </article>
         <article>
-          <form action="#" method="post">
+          <form action="" method="post" id="form">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
-                >Email address</label
-              >
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
               <input
                 type="email"
                 class="form-control"
-                id="exampleInputEmail1"
+                id="email"
+                name="email"
                 placeholder="Email"
               />
             </div>
-            <div class="mb-3">
-              <label for="message">Message</label>
-              <input
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea
                 class="form-control"
-                type="text"
-                id="email"
-                name="email"
-                placeholder="Message"
+                id="message"
+                name="message"
+                rows="3"
                 required
-              />
+                placeholder="Message"
+              ></textarea>
             </div>
+            <br />
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </article>
+      </section>
+      <footer>
         <article class="fa-icons contact-section">
           <a title="GitHub" target="_blank" href="https://github.com/17920368"
             ><i class="fa fa-github" aria-hidden="true"></i
           ></a>
         </article>
-      </section>
+        <p>
+          <i class="fa fa-copyright" aria-hidden="true"></i> 2021 Abraham Víctor
+          Zaragoza Rodríguez
+        </p>
+      </footer>
     </main>
-    <footer>
-      <p>
-        <i class="fa fa-copyright" aria-hidden="true"></i> 2021 Abraham Víctor
-        Zaragoza Rodríguez
-      </p>
-    </footer>
   </body>
 </html>
