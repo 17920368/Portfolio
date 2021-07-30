@@ -1,0 +1,144 @@
+/**main**/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  background-color: dimgrey;
+}
+* {
+  color: white;
+}
+
+/**header**/
+header {
+  width: 100%;
+  background-color: gray;
+  color: white;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+/**Presentation**/
+.presentation {
+  background-image: url("https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+  background-repeat: repeat;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section__article img {
+  border: 5px solid dimgrey;
+  border-radius: 70px;
+  align-items: flex-start;
+  margin: auto 2%;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+}
+#presentationText {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  margin: 0% auto;
+}
+.pPresentation {
+  font-size: 35px;
+  margin: 0% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/**About Me**/
+.aboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0% auto;
+  height: 100%;
+  width: 100%;
+  background-color: dimgrey;
+}
+.AmI {
+  height: 50%;
+  width: 50%;
+  margin: 0% auto;
+  margin-block-start: 20px;
+}
+/**Title**/
+.title {
+  text-align: center;
+  background-color: black;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+tittleSection {
+  display: flex;
+  flex-wrap: nowrap;
+}
+/**Skill**/
+#imgJs {
+  height: 225px;
+}
+img {
+  height: 250px;
+  width: 250px;
+}
+p {
+  text-align: center;
+}
+.mySkill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+  margin: 0% auto;
+  background-color: dimgrey;
+}
+.descriptionSkill {
+  width: 200px;
+  margin: 0% auto;
+}
+.contentSkill {
+  padding: 0;
+  margin: 0;
+  background-color: gray;
+  margin-block-end: 20px;
+  height: 450px;
+}
+
+.contentSkill:hover {
+  border: 10px solid white;
+  border-radius: 25px;
+}
+/**Contact**/
+.contact {
+  margin-bottom: 20px;
+  height: 350px;
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.fa-icons {
+  font-size: 80px;
+}
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/**Footer**/
+footer {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  background-color: black;
+}
